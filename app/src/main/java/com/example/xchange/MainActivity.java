@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
         Float currencyExchangeRate = exchangeRates.get(selectedItem);
         Float amount = Float.valueOf(this.amount.getText().toString());
 
-        return amount * currencyExchangeRate;
+        return amount / currencyExchangeRate;
     }
 
 }
